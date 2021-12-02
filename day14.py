@@ -1,18 +1,16 @@
 import random, math
 
 def load():
-	with open('day14Input.txt') as file:
-		data = file.readlines()
-		d = [line.strip() for line in data]
-	return d
+    with open('day14Input.txt') as file:
+        data = file.readlines()
+        d = [line.strip() for line in data]
+    return d
 
 inpt = load()
 def part1(inpt):
-	inpt = ''.join(inpt)
-	inpt = [n for n in inpt.split(',')]
-	return 0
+    return 0
 
 def part2(inpt):
-	return 0
+    return 0
 
-print(inpt), sep ='\n')
+print(part1(inpt), part2(inpt))
