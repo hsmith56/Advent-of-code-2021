@@ -13,4 +13,4 @@ def part1(inpt):
 def part2(inpt):
     return 0
 
-print(part1(inpt), part2(inpt))
+print(f'Part1: {part1(inpt)}\nPart2: {part2(inpt)}')

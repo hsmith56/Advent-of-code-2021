@@ -36,4 +36,4 @@ def part2(inpt):
             aim += value
     return depth * distance
 
-print(part1(inpt), part2(inpt))
+print(f'Part1: {part1(inpt)}\nPart2: {part2(inpt)}')

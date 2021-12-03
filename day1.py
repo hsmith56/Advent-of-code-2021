@@ -23,4 +23,4 @@ def part2(inpt):
             count += 1
     return count
 
-print(part1(inpt), part2(inpt))
+print(f'Part1: {part1(inpt)}\nPart2: {part2(inpt)}')
