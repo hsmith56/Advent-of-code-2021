@@ -47,7 +47,7 @@ def recurs_func(inpt, ndx=0, o2=False, co2=False):
             next_run.append(i)
     return recurs_func(next_run, ndx + 1, o2, co2)
 
-def part2(inpt):
+def part2(inpt=inpt):
     dct = {k:{0:0,1:0} for (k) in range(len(inpt[0]))}
     for line in inpt:
         for index, value in enumerate(line):
@@ -66,4 +66,6 @@ def part2(inpt):
         return recurs_func(oxygen, o2=True) * recurs_func(carbon, co2=True)
         
 
-print(f'Part1: {part1(inpt)}\nPart2: {part2(inpt)}')
+#print(f'Part1: {part1(inpt)}\nPart2: {part2(inpt)}')
+import timeit
+print(timeit.timeit(stmt=part2, number=10))
