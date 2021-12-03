@@ -64,8 +64,5 @@ def part2(inpt=inpt):
             if int(number[i]) == digit_min:
                 carbon.append(number)
         return recurs_func(oxygen, o2=True) * recurs_func(carbon, co2=True)
-        
 
-#print(f'Part1: {part1(inpt)}\nPart2: {part2(inpt)}')
-import timeit
-print(timeit.timeit(stmt=part2, number=10))
+print(f'Part1: {part1(inpt)}\nPart2: {part2(inpt)}') 
