@@ -1,7 +1,7 @@
 import random, math
 
 def load():
-    with open('day20Input.txt') as file:
+    with open('day_20/day20Input.txt') as file:
         data = file.readlines()
         d = [line.strip() for line in data]
     return d
